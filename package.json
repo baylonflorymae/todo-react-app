@@ -1,0 +1,38 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "Todo-List-App",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel src/index.js",
+    "build-server": "parcel server/server.js --target node --out-dir dist-server",
+    "start-server": "nodemon dist-server/server.js",
+    "test-model:userInfo:userIDValidation": "jest server/model/userInfoModel/userIDValidation"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Mae Baylon",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jest": "^26.0.1",
+    "mysql": "^2.18.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-js-pagination": "^3.0.3",
+    "react-router-dom": "^5.2.0",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-es2016": "^7.0.0-beta.53",
+    "@types/jest": "^26.0.0",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
